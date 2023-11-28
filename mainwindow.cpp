@@ -29,10 +29,9 @@ void MainWindow::on_pushButton_clicked()
         hide();
         homePage = new HomePage(this);
         homePage->show();
-        ui->statusbar->showMessage("Welcome",3000);
     } else {
         QMessageBox::warning(this,"Login","Username or password is not correct");
-        ui->statusbar->showMessage("invalid value",3000);
+        ui->statusbar->showMessage("invalid value",5000);
     }
 }
 
