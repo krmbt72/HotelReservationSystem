@@ -25,7 +25,6 @@ void MainWindow::on_pushButton_clicked()
     QString username = ui->lineEdit_username->text();
     QString password = ui->lineEdit_password->text();
     if(username == "test" && password == "123"){
-        QMessageBox::information(this,"Login","Username and password is correct");
         hide();
         homePage = new HomePage(this);
         homePage->show();

@@ -4,7 +4,7 @@
 #include <QDialog>
 
 namespace Ui {
-class HomePage;
+    class HomePage;
 }
 
 class HomePage : public QDialog
