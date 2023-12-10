@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/resource">
         <file>icon/password.png</file>
+        <file>image/room.png</file>
     </qresource>
 </RCC>

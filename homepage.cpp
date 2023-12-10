@@ -6,6 +6,11 @@ HomePage::HomePage(QWidget *parent) :
     ui(new Ui::HomePage)
 {
     ui->setupUi(this);
+
+    //Path to image file
+    QPixmap roomImg(":/resource/image/room.png");
+    ui->label_Image->setPixmap(roomImg);
+    ui->label_Image->setScaledContents(true);
 }
 
 HomePage::~HomePage()

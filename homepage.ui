@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>844</width>
+    <height>452</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>HOTEL RESERVATION SYSTEM</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="label_Image">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>110</y>
-     <width>211</width>
-     <height>61</height>
+     <x>310</x>
+     <y>30</y>
+     <width>511</width>
+     <height>391</height>
     </rect>
    </property>
    <property name="text">
@@ -27,6 +27,86 @@
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_RegisterClient">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>240</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Customer Registration</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_BookRoom">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>240</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Book Room</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_CheckOut">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>240</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Check Out</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>330</y>
+     <width>240</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Check Availability</string>
    </property>
   </widget>
  </widget>
