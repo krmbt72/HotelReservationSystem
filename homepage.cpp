@@ -17,3 +17,11 @@ HomePage::~HomePage()
 {
     delete ui;
 }
+
+void HomePage::on_pushButton_RegisterClient_clicked()
+{
+    hide();
+    registeration = new Registration(this);
+    registeration->show();
+}
+
