@@ -140,7 +140,7 @@
     </font>
    </property>
    <property name="text">
-    <string>E-mail:</string>
+    <string>E-mail :</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_7">

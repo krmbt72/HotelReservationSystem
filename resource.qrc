@@ -2,5 +2,6 @@
     <qresource prefix="/resource">
         <file>icon/password.png</file>
         <file>image/room.png</file>
+        <file>database/hotel.db</file>
     </qresource>
 </RCC>
