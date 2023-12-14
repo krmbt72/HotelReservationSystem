@@ -6,6 +6,7 @@ HomePage::HomePage(QWidget *parent) :
     ui(new Ui::HomePage)
 {
     ui->setupUi(this);
+    this->setFixedSize(850,450);
 
     //Path to image file
     QPixmap roomImg(":/resource/image/room.png");
@@ -16,12 +17,11 @@ HomePage::HomePage(QWidget *parent) :
 HomePage::~HomePage()
 {
     delete ui;
+    delete registeration;
 }
 
 void HomePage::on_pushButton_RegisterClient_clicked()
 {
-    hide();
     registeration = new Registration(this);
     registeration->show();
 }
-

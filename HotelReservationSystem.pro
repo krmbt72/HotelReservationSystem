@@ -9,15 +9,19 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Payment.cpp \
     homepage.cpp \
     loginpage.cpp \
     main.cpp \
-    registration.cpp
+    registration.cpp \
+    service.cpp
 
 HEADERS += \
+    Payment.h \
     homepage.h \
     loginpage.h \
-    registration.h
+    registration.h \
+    service.h
 
 FORMS += \
     homepage.ui \

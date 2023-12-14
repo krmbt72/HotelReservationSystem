@@ -8,6 +8,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setFixedSize(500,215);
+
     QPixmap iconImage(":/resource/icon/password.png");
     int w = ui->label_icon->width();
     int h = ui->label_icon->height();

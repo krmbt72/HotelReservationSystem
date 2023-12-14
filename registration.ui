@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>Registration</class>
  <widget class="QWidget" name="Registration">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -203,7 +206,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButton_Submit">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -216,7 +219,7 @@
     <string>Submit</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pushButton_Cancel">
    <property name="geometry">
     <rect>
      <x>250</x>
