@@ -16,16 +16,6 @@
   <property name="windowTitle">
    <string>REGISTRATION</string>
   </property>
-  <widget class="QTextEdit" name="textEdit">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>30</y>
-     <width>200</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -166,46 +156,6 @@
     <string>Status :</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>70</y>
-     <width>200</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="textEdit_3">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>110</y>
-     <width>200</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="textEdit_5">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>230</y>
-     <width>200</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="textEdit_6">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>190</y>
-     <width>200</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton_Submit">
    <property name="geometry">
     <rect>
@@ -214,6 +164,15 @@
      <width>80</width>
      <height>30</height>
     </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>true</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
    </property>
    <property name="text">
     <string>Submit</string>
@@ -228,11 +187,20 @@
      <height>30</height>
     </rect>
    </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>true</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
    <property name="text">
     <string>Cancel</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="comboBox_gender">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -241,8 +209,17 @@
      <height>30</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_2">
+  <widget class="QComboBox" name="comboBox_status">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -251,8 +228,105 @@
      <height>30</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_name">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="tabletTracking">
+    <bool>true</bool>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhLatinOnly</set>
+   </property>
+   <property name="maxLength">
+    <number>30</number>
+   </property>
+   <property name="cursorPosition">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_surname">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>70</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>30</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_age">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>110</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="maxLength">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_phone">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>190</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>13</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_email">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>230</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>40</number>
+   </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_name</tabstop>
+  <tabstop>lineEdit_surname</tabstop>
+  <tabstop>lineEdit_age</tabstop>
+  <tabstop>comboBox_gender</tabstop>
+  <tabstop>lineEdit_phone</tabstop>
+  <tabstop>lineEdit_email</tabstop>
+  <tabstop>comboBox_status</tabstop>
+  <tabstop>pushButton_Submit</tabstop>
+  <tabstop>pushButton_Cancel</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

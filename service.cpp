@@ -2,16 +2,16 @@
 
 Service::Service(float cost, QString service)
 {
-    amount.push_back(cost);
-    services.push_back(service);
+    amount = cost;
+    type = service;
 }
-std::vector<float> Service::getAmount()
+float Service::getAmount()
 {
     return amount;
 }
-std::vector<QString> Service::getService()
+QString Service::getType()
 {
-    return services;
+    return type;
 }
 QString Service::getDate()
 {
@@ -19,20 +19,17 @@ QString Service::getDate()
 }
 void Service::setAmount(float cost)
 {
-    amount.pop_back();
-    amount.push_back(cost);
+    amount = cost;
 }
 
-void Service::setServices(QString service)
+void Service::setType(QString service)
 {
-    services.pop_back();
-    services.push_back(service);
+    type = service;
 }
-float Service::transaction()
+float Service::transaction(const Service &serv)
 {
-    float sum=0.0;
-    sum += amount.back();
+    float sum = amount;
+    sum += serv.amount;
     return sum;
 }
 
-Service::~Service(){}

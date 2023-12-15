@@ -5,24 +5,22 @@
 class Payment
 {
 private:
-    std::vector<float> amount;
-    std::vector<QString> method;
+    float amount;
+    QString method;
     QDate date;
 public:
     Payment(float,QString);
-    ~Payment();
-    std::vector<float> getAmount();
+    float getAmount();
+    QString getMethod();
     QString getDate();
-    float calculate();
+    float calculate(float);
 };
 
 #endif // PAYMENT_H
 
 /*
-{ Cash,
-    Check,
+    Cash,
     Credit_Card,
     Mobile_Payments,
-    Electronic_Transfers,
-    Wire_Transfers
+    Electronic Funds Transfer
 */

@@ -2,12 +2,12 @@
 
 Payment::Payment(float cost, QString type)
 {
-    amount.push_back(cost);
-    method.push_back(type);
+    amount = cost;
+    method = type;
     date = QDate::currentDate();
 }
 
-std::vector<float> Payment::getAmount()
+float Payment::getAmount()
 {
     return amount;
 }
@@ -16,10 +16,9 @@ QString Payment::getDate()
     return date.toString();
 }
 
-float Payment::calculate()
+float Payment::calculate(float cost)
 {
-    float total = 0.0;
-    return total;
+    float sum = amount;
+    sum += cost;
+    return sum;
 }
-
-Payment::~Payment(){}

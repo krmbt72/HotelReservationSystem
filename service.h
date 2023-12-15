@@ -5,24 +5,23 @@
 class Service
 {
 private:
-    std::vector<float> amount;
-    std::vector<QString> services;
+    float amount;
+    QString type;
     QDate date;
 public:
-    Service(float amount, QString services);
-    ~Service();
-    std::vector<float> getAmount();
-    std::vector<QString> getService();
+    Service(float, QString);
+    float getAmount();
+    QString getType();
     QString getDate();
-    void setAmount(float cost);
-    void setServices(QString service);
-    float transaction();
+    void setAmount(float);
+    void setType(QString);
+    float transaction(const Service&);
 
 };
 #endif // SERVICE_H
 
 /*
-serviceType {   Dinner,
-        Wake_up,
-        Breakfast_in_the_room
+    Dinner,
+    Wake_up,
+    Breakfast_in_the_room
 */
