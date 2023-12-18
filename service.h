@@ -20,8 +20,3 @@ public:
 };
 #endif // SERVICE_H
 
-/*
-    Dinner,
-    Wake_up,
-    Breakfast_in_the_room
-*/

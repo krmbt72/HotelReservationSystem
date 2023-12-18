@@ -18,9 +18,3 @@ public:
 
 #endif // PAYMENT_H
 
-/*
-    Cash,
-    Credit_Card,
-    Mobile_Payments,
-    Electronic Funds Transfer
-*/
