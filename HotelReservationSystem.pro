@@ -17,6 +17,8 @@ SOURCES += \
     service.cpp
 
 HEADERS += \
+    Customer.h \
+    Human.h \
     Payment.h \
     homepage.h \
     loginpage.h \
