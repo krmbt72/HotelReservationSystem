@@ -16,6 +16,7 @@ SOURCES += \
     loginpage.cpp \
     main.cpp \
     registration.cpp \
+    reservation.cpp \
     service.cpp
 
 HEADERS += \
@@ -25,6 +26,7 @@ HEADERS += \
     homepage.h \
     loginpage.h \
     registration.h \
+    reservation.h \
     service.h
 
 FORMS += \
