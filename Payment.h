@@ -1,19 +1,32 @@
 #ifndef PAYMENT_H
 #define PAYMENT_H
 #include <QDate>
+#include <vector>
+#include <string>
+#include "reservation.h"
+#include "service.h"
 
 class Payment
 {
 private:
+    static unsigned int billNumber;
     float amount;
     QString method;
-    QDate date;
+    std::vector<QDate> billDates;
+    std::vector<Customer> customers;
+    std::vector<Reservation> reservations;
+    std::vector<Service> services;
+
 public:
-    Payment(float,QString);
-    float getAmount();
+    Payment(Reservation,Service);
+    float getAmounts();
     QString getMethod();
-    QString getDate();
-    float calculate(float);
+    QString getBillDate();
+    int getBillNumber();
+    Customer getCustomer();
+    Reservation getReservation();
+    float calculate();
+    QString print();
 };
 
 #endif // PAYMENT_H

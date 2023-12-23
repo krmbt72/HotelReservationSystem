@@ -19,3 +19,9 @@ void Registration::on_pushButton_Cancel_clicked()
     this->hide();    
 }
 
+
+void Registration::on_pushButton_Submit_clicked()
+{
+
+}
+
