@@ -1,35 +1,35 @@
 #include "service.h"
 
-Service::Service(float cost, QString service)
+Service::Service(float cost, QString type, int amount)
 {
-    amount = cost;
-    type = service;
+    this->cost = cost;
+    this->type = type;
+    this->amount = amount;
 }
-float Service::getAmount()
+float Service::getCost()
 {
-    return amount;
+    return cost;
 }
 QString Service::getType()
 {
     return type;
 }
-QString Service::getDate()
+int Service::getAmount()
 {
-    return date.toString();
+    return amount;
 }
-void Service::setAmount(float cost)
+void Service::setCost(float cost)
 {
-    amount = cost;
+    this->cost = cost;
 }
 
-void Service::setType(QString service)
+void Service::setType(QString type)
 {
-    type = service;
+    this->type = type;
 }
-float Service::transaction(const Service &serv)
+
+void Service::setAmount(int amount)
 {
-    float sum = amount;
-    sum += serv.amount;
-    return sum;
+    this->amount = amount;
 }
 

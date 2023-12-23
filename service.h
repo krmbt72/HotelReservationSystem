@@ -5,17 +5,17 @@
 class Service
 {
 private:
-    float amount;
+    float cost;
     QString type;
-    QDate date;
+    int amount;
 public:
-    Service(float, QString);
-    float getAmount();
+    Service(float, QString,int);
+    float getCost();
     QString getType();
-    QString getDate();
-    void setAmount(float);
+    int getAmount();
+    void setCost(float);
     void setType(QString);
-    float transaction(const Service&);
+    void setAmount(int);
 
 };
 #endif // SERVICE_H
