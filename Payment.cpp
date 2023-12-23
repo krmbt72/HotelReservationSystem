@@ -1,24 +1,24 @@
 #include "Payment.h"
 
-Payment::Payment(float cost, QString type)
+Payment::Payment(float debt, QString method)
 {
-    amount = cost;
-    method = type;
+    this->debt = debt;
+    this->method = method;
     date = QDate::currentDate();
 }
 
-float Payment::getAmount()
+float Payment::getDebt()
 {
-    return amount;
+    return debt;
 }
+
+QString Payment::getMethod()
+{
+    return method;
+}
+
 QString Payment::getDate()
 {
     return date.toString();
 }
 
-float Payment::calculate(float cost)
-{
-    float sum = amount;
-    sum += cost;
-    return sum;
-}

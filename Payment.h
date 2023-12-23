@@ -5,15 +5,14 @@
 class Payment
 {
 private:
-    float amount;
+    float debt;
     QString method;
     QDate date;
 public:
     Payment(float,QString);
-    float getAmount();
+    float getDebt();
     QString getMethod();
     QString getDate();
-    float calculate(float);
 };
 
 #endif // PAYMENT_H
