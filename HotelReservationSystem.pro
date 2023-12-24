@@ -12,6 +12,7 @@ SOURCES += \
     Customer.cpp \
     Human.cpp \
     Payment.cpp \
+    Reservation.cpp \
     homepage.cpp \
     loginpage.cpp \
     main.cpp \
@@ -22,6 +23,7 @@ HEADERS += \
     Customer.h \
     Human.h \
     Payment.h \
+    RESERVATION_H.h \
     homepage.h \
     loginpage.h \
     registration.h \
